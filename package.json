@@ -1,0 +1,32 @@
+{
+  "name": "mskcors",
+  "version": "0.0.1",
+  "description": "CORS Anywhere is a reverse proxy which adds CORS headers to the proxied request. Request URL is taken from the path",
+  "private": true,
+  "license": "MIT",
+  "author": "Santhosh Veer",
+  "keywords": [
+    "cors",
+    "cross-domain",
+    "http-proxy",
+    "proxy",
+    "heroku"
+  ],
+  "main": "./lib/cors-anywhere.js",
+  "files": [
+    "lib/",
+    "Procfile",
+    "server.js"
+  ],
+  "dependencies": {
+    "http-proxy": "1.18.1",
+    "proxy-from-env": "1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "8.39.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "live": "node server.js"
+  }
+}
